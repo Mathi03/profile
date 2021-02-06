@@ -1,0 +1,433 @@
+:root {
+  --color1: #24c0eb;
+  --color2: #0077b6;
+  --color3: #00b4d8;
+  --color4: #ade8f4;
+  --color5: #caf0f8;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?g1xn8c');
+  src: url('../fonts/icomoon.eot?g1xn8c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?g1xn8c') format('truetype'),
+    url('../fonts/icomoon.woff?g1xn8c') format('woff'),
+    url('../fonts/icomoon.svg?g1xn8c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-message:before {
+  content: '\e901';
+}
+.icon-phone:before {
+  content: '\e902';
+}
+.icon-location:before {
+  content: '\e903';
+}
+.icon-linkedin:before {
+  content: '\e904';
+}
+.icon-github:before {
+  content: '\e905';
+}
+.icon-facebook:before {
+  content: '\e906';
+}
+.icon-menu:before {
+  content: '\e900';
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+figure,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.burger__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(36, 192, 235, 0.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 6;
+  left: 5px;
+  top: 5px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  flex: 1;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.header {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background-color: var(--color1);
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: inherit;
+}
+
+.header img {
+  height: 70px;
+  width: auto;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ul {
+  display: flex;
+  height: inherit;
+  flex-wrap: wrap;
+}
+
+.header ul li {
+  height: inherit;
+}
+
+.header a {
+  display: flex;
+  height: inherit;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 50px 0;
+}
+.section__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section__description {
+  text-align: center;
+}
+
+.section--shadow {
+  background-color: #f7f7f7;
+}
+
+.section__content {
+  margin-top: 40px;
+  display: inherit;
+  align-items: inherit;
+}
+
+.content__video {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------- Home ---------- */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home img {
+  width: 100%;
+}
+
+.home__title {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+/* ----------- About ---------- */
+.about__box {
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.about__profile {
+  flex: 1;
+}
+.about__profile img {
+  width: 100%;
+  height: auto;
+}
+
+.skill__title {
+  margin: 5px 0;
+}
+
+.skill__list {
+  flex: 1;
+  padding: 15px;
+}
+
+.skill__list ul {
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+.skill__elem {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.skill__elem span {
+  background-color: var(--color1);
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ----------- Services ---------- */
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 25%;
+  margin: 0 auto;
+}
+
+#service .service__box {
+  background-color: #f7f7f7;
+}
+
+.service__title {
+  text-align: center;
+  margin: auto 0;
+}
+
+.service__icon {
+  border: 2px solid var(--color1);
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+}
+
+.service__box img {
+  width: 35px;
+  height: 35px;
+}
+
+.service__description {
+  text-align: center;
+}
+
+/* ----------- Portfolio ---------- */
+
+.project {
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.project__details {
+  width: 50%;
+}
+
+.project__title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.project__imageContainer {
+  width: 50%;
+}
+
+.project__imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------- Contact ---------- */
+
+address {
+  font-style: normal;
+}
+
+.contact__title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.contact__list {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+
+#contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----------- Footer ---------- */
+
+.footer {
+  background-color: var(--color1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__content {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .burger__button {
+    display: block;
+  }
+
+  .header {
+    display: block;
+    height: auto;
+    position: initial;
+  }
+  .header ul {
+    display: initial;
+  }
+  .header ul li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+  }
+  .header .logo {
+    text-align: center;
+  }
+
+  .menu {
+    position: fixed;
+    background: rgb(36, 192, 235, 0.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .menu.active {
+    left: 0;
+  }
+
+  .about__box {
+    display: block;
+  }
+
+  .project {
+    display: block;
+  }
+  .project__details {
+    width: auto;
+  }
+  .project__imageContainer {
+    width: auto;
+  }
+
+  .service__box {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .service__box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+}
